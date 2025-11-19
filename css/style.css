@@ -264,12 +264,8 @@ input:checked+.slider:before {
 }
 
 .btn:hover {
-    position: absolute;
-    top: 0;
-    width: 100px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 .marquee-container::before {
