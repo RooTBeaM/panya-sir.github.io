@@ -10,401 +10,610 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body data-theme="light">
-
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Panya.S</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="theme-switch-wrapper">
-                    <span id="theme-label">Light Mode</span>
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                </div>
-            </nav>
-        </div>
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="mobile-logo">Panya.S</div>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <canvas id="network-canvas"></canvas>
-            <div class="container hero-content">
-                <h1>Panya Sirikulpattanapol</h1>
-                <h2>Engineer • Marketer • Developer</h2>
-                <p>Passion for designing and implementing intelligent systems that learn and make decisions from data
-                    and experience. Creating innovative solutions with real-world impact.</p>
-                <a href="#projects" class="btn">View My Work</a>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="profile-section">
+                <div class="profile-img-container">
+                    <img src="assets/profile.jpg" alt="Panya Sirikulpattanapol" class="profile-img">
+                </div>
+                <h1 class="profile-name">Panya Sirikulpattanapol</h1>
+                <p class="profile-role">Lead Data Scientist</p>
+                <p class="profile-tagline">AI Developer • Engineer</p>
             </div>
-        </section>
 
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link active"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> Projects</a></li>
+                    <li><a href="#awards" class="nav-link"><i class="fas fa-trophy"></i> Awards</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-social">
+                <a href="mailto:panya.sirikul@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/panya-sirikul" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/RooTBeaM" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
         <!-- About Section -->
-        <section id="about" class="bg-secondary">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content-wrapper">
-                    <div class="about-img-container">
-                        <img src="assets/profile.jpg" alt="Panya Sirikulpattanapol" class="about-profile-img">
-                    </div>
-                    <div class="about-text">
-                        <p style="margin-bottom: 20px;">
-                            I am a versatile professional with a strong background in <strong>Algorithms, Neural
-                                Networks, and Advanced AI/ML techniques</strong>.
-                            My experience spans across Data Science, Engineering, and Digital Marketing, allowing me to
-                            approach problems with a unique, holistic perspective.
-                        </p>
-                        <p style="margin-bottom: 20px;">
-                            Skilled in mechanical system design and development for innovation and efficiency, I also
-                            possess a strong analytical background with expertise in complex decision-making and risk
-                            assessment.
-                        </p>
-                        <p>
-                            Currently focused on building intelligent systems that transform how people live and work.
-                        </p>
-                    </div>
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm a <strong>Lead Data Scientist</strong> with a passion for building intelligent
+                        systems
+                        that solve real-world problems. With expertise in <strong>Algorithms, Neural Networks, and
+                            Advanced AI/ML techniques</strong>, I specialize in developing end-to-end machine learning
+                        solutions
+                        from concept to production deployment.
+                    </p>
+                    <p>
+                        My journey spans across <strong>Data Science, Mechanical Engineering, and Digital
+                            Marketing</strong>,
+                        giving me a unique cross-functional perspective. I've built demand forecasting models, OCR
+                        solutions
+                        using large language models like GPT and Gemini, and AI agents that streamline business
+                        operations.
+                    </p>
+                    <p>
+                        Beyond coding, I bring strong analytical skills with expertise in complex decision-making and
+                        risk assessment — skills honed during my years as a Design Engineer working on precision
+                        manufacturing
+                        and quality systems.
+                    </p>
+                    <p>
+                        Currently, I'm focused on <strong>Agentic AI</strong> — exploring how autonomous AI systems can
+                        transform workflows and create new possibilities. I believe the future belongs to AI that
+                        doesn't
+                        just respond, but thinks, plans, and acts.
+                    </p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="bg-default">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <!-- AI / Machine Learning -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Agentic AI</span>
-                            <span class="skill-tag">LangChain</span>
-                            <span class="skill-tag">Vector DB</span>
-                            <span class="skill-tag">GCP</span>
-                            <span class="skill-tag">Chatbot</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Keras</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Scikit-Learn</span>
-                            <span class="skill-tag">YOLO</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Reinforcement Learning</span>
-                        </div>
-                    </div>
-
-                    <!-- Programming & Web -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Programming & Web</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">SQL (MySQL, PostgreSQL)</span>
-                            <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">Django</span>
-                        </div>
-                    </div>
-
-                    <!-- Tools & Engineering -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i> Tools & Engineering</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">Jupyter Notebook</span>
-                            <span class="skill-tag">Google Colab</span>
-                            <span class="skill-tag">Git/GitHub</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">CATIA</span>
-                            <span class="skill-tag">MATLAB</span>
-                            <span class="skill-tag">Arduino IDE</span>
-                        </div>
-                    </div>
-
-                    <!-- IoT & Robotics -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> IoT & Robotics</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Arduino Uno</span>
-                            <span class="skill-tag">ESP32</span>
-                            <span class="skill-tag">ROS</span>
-                            <span class="skill-tag">PLC</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Logo Marquee Section -->
-        <section class="logo-marquee-section bg-secondary">
-            <div class="container">
-                <div class="marquee-container">
-                    <div class="marquee-track">
-                        <!-- Duplicate logos for seamless loop -->
-                        <img src="assets/logo/python.png" alt="Python">
-                        <img src="assets/logo/tenserflow.png" alt="TensorFlow">
-                        <img src="assets/logo/pytorch.png" alt="PyTorch">
-                        <img src="assets/logo/openai.png" alt="OpenAI">
-                        <img src="assets/logo/lanchain.png" alt="LangChain">
-                        <img src="assets/logo/langgraph.png" alt="LangGraph">
-                        <img src="assets/logo/gimini.png" alt="Gemini">
-                        <img src="assets/logo/gcp.png" alt="GCP">
-                        <img src="assets/logo/Ultralytics.png" alt="Ultralytics">
-
-                        <!-- Duplicate set -->
-                        <img src="assets/logo/python.png" alt="Python">
-                        <img src="assets/logo/tenserflow.png" alt="TensorFlow">
-                        <img src="assets/logo/pytorch.png" alt="PyTorch">
-                        <img src="assets/logo/openai.png" alt="OpenAI">
-                        <img src="assets/logo/lanchain.png" alt="LangChain">
-                        <img src="assets/logo/langgraph.png" alt="LangGraph">
-                        <img src="assets/logo/gimini.png" alt="Gemini">
-                        <img src="assets/logo/gcp.png" alt="GCP">
-                        <img src="assets/logo/Ultralytics.png" alt="Ultralytics">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="bg-default">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="timeline">
-                    <!-- AXONS -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <span class="timeline-date">Sep 2023 – Present</span>
-                            <h3 class="timeline-role">Lead Data Scientist</h3>
-                            <p class="timeline-company">CPF IT Center Co., Ltd (AXONS) | Bangkok, Thailand</p>
-                            <ul style="margin-left: 20px; margin-top: 10px; font-size: 0.95rem;">
-                                <li>Developed demand forecasting and product recommendation models to empower the sales
-                                    team with data-driven insights.</li>
-                                <li>Implemented OCR solutions using Gemini and GPT models to digitize and process PDF
-                                    and scanned documents.</li>
-                                <li>Built an AI agent to streamline operations for the IT support team.</li>
-                                <li>Conducted research and development in Agentic AI to explore autonomous system
-                                    capabilities.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 360 Innovative -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <span class="timeline-date">May 2023 – Jun 2023</span>
-                            <h3 class="timeline-role">Data Scientist</h3>
-                            <p class="timeline-company">360 Innovative Co., Ltd | Bangkok, Thailand</p>
-                            <p><strong>Project:</strong> Product Recommendation for Daytriptour</p>
-                            <ul style="margin-left: 20px; margin-top: 10px; font-size: 0.95rem;">
-                                <li>Analyzed historical order data via SQL.</li>
-                                <li>Built preprocessing pipelines (missing data, outliers, categorical, normalization).
-                                </li>
-                                <li>Designed recommendation model for user-country trip suggestions.</li>
-                                <li>Connected model to MySQL and deployed to server.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Pyroen -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <span class="timeline-date">Jan 2016 – Dec 2022</span>
-                            <h3 class="timeline-role">Technical Engineer</h3>
-                            <p class="timeline-company">Pyroen Co., Ltd | Bangkok, Thailand</p>
-                            <ul style="margin-left: 20px; margin-top: 10px; font-size: 0.95rem;">
-                                <li>Matched materials to customer needs and managed shipping schedules.</li>
-                                <li>Built shipping/tax document systems using Microsoft Power Platform.</li>
-                                <li>Monitored recyclable material quality & created inspection reports.</li>
-                                <li>Implemented waste management system for government & industry.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- DTM Thailand -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <span class="timeline-date">May 2015 – Dec 2015</span>
-                            <h3 class="timeline-role">Sales Engineer</h3>
-                            <p class="timeline-company">DTM Thailand Co., Ltd | Bangkok, Thailand</p>
-                            <ul style="margin-left: 20px; margin-top: 10px; font-size: 0.95rem;">
-                                <li>Trained users and provided technical support for Siemens NX.</li>
-                                <li>Supported troubleshooting (online & onsite).</li>
-                                <li>Verified software requirements & installation.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- NSK Asia Pacific -->
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <span class="timeline-date">Mar 2011 – Mar 2015</span>
-                            <h3 class="timeline-role">Design Engineer</h3>
-                            <p class="timeline-company">NSK Asia Pacific Technology Centre | Chonburi, Thailand</p>
-                            <ul style="margin-left: 20px; margin-top: 10px; font-size: 0.95rem;">
-                                <li>Created manufacturing & assembly drawings using CATIA.</li>
-                                <li>Coordinated design updates with HQ Japan.</li>
-                                <li>Analyzed bearing failures and produced improvement reports.</li>
-                                <li>Completed 6-month intensive bearing design training in Japan.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="bg-secondary">
-            <div class="container">
-                <h2 class="section-title">Projects & Activities</h2>
-                <div class="carousel-container">
-                    <button class="carousel-btn prev-btn" aria-label="Previous Project"><i
-                            class="fas fa-chevron-left"></i></button>
-                    <div class="carousel-track-container">
-                        <ul class="carousel-track">
-                            <!-- Recommendation System -->
-                            <li class="carousel-slide">
-                                <div class="project-card">
-                                    <div class="project-img-wrapper">
-                                        <img src="assets/project_recommendation.jpg" alt="Recommendation System Project"
-                                            class="project-img">
-                                    </div>
-                                    <div class="project-content">
-                                        <h3>Recommendation System</h3>
-                                        <p>A product recommendation engine designed for Daytriptour to suggest
-                                            user-country trips based on historical data.</p>
-                                        <div class="project-tech">
-                                            <span>Python</span>
-                                            <span>SQL</span>
-                                            <span>Machine Learning</span>
-                                        </div>
-                                        <div style="margin-top: 20px;">
-                                            <a href="https://github.com/RooTBeaM/recommendation_system" target="_blank"
-                                                style="font-weight: 600;">View on GitHub <i
-                                                    class="fas fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- Real/Fake Numbers -->
-                            <li class="carousel-slide">
-                                <div class="project-card">
-                                    <div class="project-content">
-                                        <h3>Real/Fake Numbers</h3>
-                                        <p>Project involving number verification or classification (Details from repo).
-                                        </p>
-                                        <div class="project-tech">
-                                            <span>Python</span>
-                                            <span>AI</span>
-                                        </div>
-                                        <div style="margin-top: 20px;">
-                                            <a href="https://github.com/RooTBeaM/realfake_numbers" target="_blank"
-                                                style="font-weight: 600;">View on GitHub <i
-                                                    class="fas fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- Super AI Engineer Projects -->
-                            <li class="carousel-slide">
-                                <div class="project-card">
-                                    <div class="project-content">
-                                        <h3>Super AI Engineer Projects</h3>
-                                        <p>A collection of AI projects completed during the Super AI Engineer Season 3
-                                            program.</p>
-                                        <ul style="margin-top: 10px; font-size: 0.9rem; list-style-position: inside;">
-                                            <li>CMSK Chatbot (NLP)</li>
-                                            <li>Reinforcement Learning Robot</li>
-                                            <li>Poverty Rate Prediction</li>
-                                            <li>Liver Lesion Detection</li>
-                                        </ul>
-                                        <div class="project-tech">
-                                            <span>NLP</span>
-                                            <span>Computer Vision</span>
-                                            <span>RL</span>
-                                        </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="carousel-btn next-btn" aria-label="Next Project"><i
-                            class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="carousel-dots"></div>
-            </div>
-        </section>
-
-        <!-- Awards Section -->
-        <section id="awards" class="bg-default">
-            <div class="container">
-                <h2 class="section-title">Awards & Certifications</h2>
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <ul style="list-style: none;">
-                        <li
-                            style="margin-bottom: 15px; padding: 15px; background: var(--card-bg); border-radius: 8px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
-                            <strong>31st – NLP: CMSK Chatbot (QA)</strong> — Super AI Engineer Season 3 (2023)
+                <div class="about-highlights">
+                    <h3>Key Highlights</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML Specialist</span>
                         </li>
-                        <li
-                            style="margin-bottom: 15px; padding: 15px; background: var(--card-bg); border-radius: 8px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
-                            <strong>31st – Robotics: Reinforcement Learning Robot</strong> — Super AI Engineer Season 3
-                            (2023)
+                        <li>
+                            <i class="fas fa-briefcase"></i>
+                            <span>10+ Years Experience</span>
                         </li>
-                        <li
-                            style="margin-bottom: 15px; padding: 15px; background: var(--card-bg); border-radius: 8px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
-                            <strong>32nd – Data Science: Poverty Rate Prediction</strong> — Super AI Engineer Season 3
-                            (2023)
+                        <li>
+                            <i class="fas fa-project-diagram"></i>
+                            <span>15+ Projects Completed</span>
                         </li>
-                        <li
-                            style="margin-bottom: 15px; padding: 15px; background: var(--card-bg); border-radius: 8px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
-                            <strong>JLPT N4</strong> — Japanese Language Proficiency Test (2014)
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <span>Team Leadership</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Mechanical Engineering</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bangkok, Thailand</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="bg-secondary">
-            <div class="container contact-content">
-                <h2 class="section-title">Get In Touch</h2>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
-                    visions.</p>
-
-                <div class="social-links">
-                    <a href="mailto:panya.sirikul@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/panya-sirikul" target="_blank" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/RooTBeaM" target="_blank" aria-label="GitHub"><i
-                            class="fab fa-github"></i></a>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <!-- AI & ML -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Agentic AI / LangChain</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>TensorFlow / PyTorch</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Computer Vision (YOLO)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div style="margin-top: 30px;">
-                    <p><i class="fas fa-phone"></i> +66-959599793</p>
+                <!-- Programming -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL (MySQL, PostgreSQL)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML / CSS / JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>GCP / Docker</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git / GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-    </main>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <span class="timeline-date">Sep 2023 – Present</span>
+                                <h3>Lead Data Scientist</h3>
+                                <p class="company">CPF IT Center Co., Ltd (AXONS) | Bangkok</p>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>Python</span>
+                                <span>LangChain</span>
+                                <span>GCP</span>
+                                <span>TensorFlow</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Developed demand forecasting and product recommendation models</li>
+                            <li>Implemented OCR solutions using Gemini and GPT models</li>
+                            <li>Built AI agents for IT support operations</li>
+                            <li>R&D in Agentic AI for autonomous systems</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Panya Sirikulpattanapol. All Rights Reserved.</p>
-        </div>
-    </footer>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <span class="timeline-date">May 2023 – Jun 2023</span>
+                                <h3>Data Scientist</h3>
+                                <p class="company">360 Innovative Co., Ltd | Bangkok</p>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Built product recommendation system for Daytriptour</li>
+                            <li>SQL data analysis and preprocessing pipelines</li>
+                            <li>MySQL integration and server deployment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <span class="timeline-date">Jan 2016 – Dec 2022</span>
+                                <h3>Technical Engineer</h3>
+                                <p class="company">Pyroen Co., Ltd | Bangkok</p>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>Power Platform</span>
+                                <span>Excel</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Built document systems using Microsoft Power Platform</li>
+                            <li>Implemented waste management systems</li>
+                            <li>Quality monitoring and inspection reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <span class="timeline-date">May 2015 – Dec 2015</span>
+                                <h3>Sales Engineer</h3>
+                                <p class="company">DTM Thailand Co., Ltd | Bangkok</p>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>Siemens NX</span>
+                                <span>CAD</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Technical support for Siemens NX software</li>
+                            <li>User training and troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <span class="timeline-date">Mar 2011 – Mar 2015</span>
+                                <h3>Design Engineer</h3>
+                                <p class="company">NSK Asia Pacific Technology Centre | Chonburi</p>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>CATIA</span>
+                                <span>MATLAB</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Created manufacturing drawings using CATIA</li>
+                            <li>6-month intensive training in Japan</li>
+                            <li>Bearing failure analysis and improvements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">A selection of my recent work in AI, Machine Learning, and Data Science.</p>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_recommendation.jpg" alt="Recommendation System" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RooTBeaM/recommendation_system" target="_blank"
+                                class="project-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Recommendation System</h3>
+                        <p>Product recommendation engine for Daytriptour using historical travel data and collaborative
+                            filtering.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-placeholder">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/RooTBeaM/realfake_numbers" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real/Fake Numbers</h3>
+                        <p>AI-powered number verification and classification system using deep learning techniques.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-btn disabled">
+                                <i class="fas fa-lock"></i> Private
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CMSK Chatbot</h3>
+                        <p>NLP-based Question Answering chatbot developed for Super AI Engineer Season 3.</p>
+                        <div class="project-tech">
+                            <span>NLP</span>
+                            <span>LangChain</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-btn disabled">
+                                <i class="fas fa-lock"></i> Private
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>RL Robot Navigation</h3>
+                        <p>Reinforcement Learning robot trained to navigate environments autonomously.</p>
+                        <div class="project-tech">
+                            <span>Reinforcement Learning</span>
+                            <span>PyTorch</span>
+                            <span>ROS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-btn disabled">
+                                <i class="fas fa-lock"></i> Private
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Poverty Rate Prediction</h3>
+                        <p>Data Science project predicting poverty rates using socioeconomic indicators.</p>
+                        <div class="project-tech">
+                            <span>Data Science</span>
+                            <span>Scikit-Learn</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-placeholder">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-btn disabled">
+                                <i class="fas fa-lock"></i> Private
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Liver Lesion Detection</h3>
+                        <p>Computer Vision model for detecting liver lesions in medical imaging.</p>
+                        <div class="project-tech">
+                            <span>Computer Vision</span>
+                            <span>YOLO</span>
+                            <span>Medical AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
+                ============================================
+                ADD NEW PROJECTS HERE - TEMPLATE BELOW
+                ============================================
+                
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/your-image.jpg" alt="Project Name" class="project-img">
+                        OR use placeholder:
+                        <div class="project-placeholder">
+                            <i class="fas fa-icon-name"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="YOUR-GITHUB-LINK" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title</h3>
+                        <p>Short description of the project.</p>
+                        <div class="project-tech">
+                            <span>Tag1</span>
+                            <span>Tag2</span>
+                        </div>
+                    </div>
+                </div>
+                
+                ============================================
+                -->
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="section">
+            <h2 class="section-title">Awards & Certifications</h2>
+            <div class="awards-container">
+                <!-- Award Row 1 -->
+                <div class="award-row">
+                    <div class="award-icon-wrapper">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-details">
+                        <h3>NLP: CMSK Chatbot (QA)</h3>
+                        <p>Super AI Engineer Season 3</p>
+                    </div>
+                    <div class="award-year">2023</div>
+                </div>
+
+                <!-- Award Row 2 -->
+                <div class="award-row">
+                    <div class="award-icon-wrapper">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-details">
+                        <h3>Robotics: RL Robot Navigation</h3>
+                        <p>Super AI Engineer Season 3</p>
+                    </div>
+                    <div class="award-year">2023</div>
+                </div>
+
+                <!-- Award Row 3 -->
+                <div class="award-row">
+                    <div class="award-icon-wrapper">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="award-details">
+                        <h3>Data Science: Poverty Rate Prediction</h3>
+                        <p>Super AI Engineer Season 3</p>
+                    </div>
+                    <div class="award-year">2023</div>
+                </div>
+
+                <!-- Award Row 4 -->
+                <div class="award-row">
+                    <div class="award-icon-wrapper certificate">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="award-details">
+                        <h3>JLPT N4 – Japanese Language Proficiency</h3>
+                        <p>Japan Foundation</p>
+                    </div>
+                    <div class="award-year">2014</div>
+                </div>
+
+                <!-- 
+                ADD MORE AWARDS HERE - TEMPLATE:
+                
+                <div class="award-row">
+                    <div class="award-icon-wrapper">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-details">
+                        <h3>Award Title</h3>
+                        <p>Organization / Event</p>
+                    </div>
+                    <div class="award-year">YEAR</div>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:panya.sirikul@gmail.com">panya.sirikul@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+66-959599793</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/panya-sirikul"
+                            target="_blank">linkedin.com/in/panya-sirikul</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/RooTBeaM" target="_blank">github.com/RooTBeaM</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Panya Sirikulpattanapol. All Rights Reserved.</p>
+        </footer>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
